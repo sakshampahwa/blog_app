@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%# <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %> %>
+  </head>
+
+  <body>
+    <div id="upbg"></div>
+
+<div id="outer">
+
+
+	<div id="header">
+		
+
+
+	<form method="post" action="">
+		<div id="search">
+			<input type="text" class="text" maxlength="64" name="keywords" />
+			<input type="submit" class="submit" value="Search" />
+		</div>
+	</form>
+
+
+	<div id="headerpic"></div>
+
+	
+	<div id="menu">
+		<!-- HINT: Set the class of any menu link below to "active" to make it appear active -->
+		<ul>
+			<li><a href="#">Home</a></li>
+		<!--	<li><a href="#" class="active">News</a></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="#">Gallery</a></li> -->
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>  
+    
+	</div>
+	<div id="menubottom"></div>
+
+	
+	<div id="content">
+
+	
+	<img class="left" src="/assets/blog.jpeg" width="100" height="100" >
+  <img class="left" src="/assets/blog1.jpeg" width="100" height="100" >
+		<div class="divider1"></div>
+    <%=yield%>
+    
+		<!-- Primary content: Stuff that goes in the primary content column (by default, the left column) -->
+		<div id="primarycontainer">
+			<div id="primarycontent">
+				<!-- Primary content area start -->
+		
+				
+		
+				
+	
+				<div class="divider2"></div>
+		
+				
+
+				<!-- Primary content area end -->
+			</div>
+		</div>
+
+		
+		<!-- Secondary content: Stuff that goes in the secondary content column (by default, the narrower right column) -->
+		
+		
+			
+
+			<!-- Secondary content area end -->
+		</div>
+
+
+	</div>
+
+	<div id="footer">
+			<div class="left">&copy; 2023 Telephone Directory All rights reserved.</div>
+			<div class="right">Design by Saksham Pahwa</div>
+	</div>
+	
+</div>
+  </body>
+</html>
